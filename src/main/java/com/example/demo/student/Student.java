@@ -10,8 +10,10 @@ public class Student {
     private LocalDate dob;
     private Integer age;
 
+    // No args constructor
     public Student() {}
 
+    // Constructor with everything
     public Student(
         Long id,
         String name,
@@ -26,6 +28,7 @@ public class Student {
         this.age = age;
     }
 
+    // Constructor with auto-generated id
     public Student(
         String name,
         String email,
@@ -38,7 +41,7 @@ public class Student {
         this.age = age;
     }
 
-
+    // Getters/Setters
     public Long getId() {
         return this.id;
     }
