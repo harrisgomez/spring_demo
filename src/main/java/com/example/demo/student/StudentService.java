@@ -1,3 +1,5 @@
+// SERVICE LAYER: Business Logic
+
 package com.example.demo.student;
 
 import java.time.LocalDate;
@@ -6,7 +8,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-@Service
+@Service    // Defines this as a Service component (a Spring bean). Automatically instantiated to @Autowired
 public class StudentService {
 
     public List<Student> getStudents() {
